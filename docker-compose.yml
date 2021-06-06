@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  django:
+    image: django_env
+    volumes:
+      - './work:/work'
+    ports:
+      - '8000:8000'
+    tty: true
+    stdin_open: true
